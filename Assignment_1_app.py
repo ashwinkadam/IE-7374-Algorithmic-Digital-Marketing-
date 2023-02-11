@@ -10,7 +10,7 @@ with row0_1:
     st.title('KPMG - Sprocket Data analysis')
 with row0_2:
     st.text("")
-    st.subheader('Streamlit App by [Ashish Mhatre](https://www.linkedin.com/in/ashishmhatre927/) and [Ashwin Kadam](https://www.linkedin.com/in/ashwinkadam07/)')
+    st.subheader('by [Ashish Mhatre](https://www.linkedin.com/in/ashishmhatre927/) and [Ashwin Kadam](https://www.linkedin.com/in/ashwinkadam07/)')
 row3_spacer1, row3_1, row3_spacer2 = st.columns((.1, 3.2, .1))
 with row3_1:
     st.markdown("Hello there! we are Group 5 and we are presenting our analysis on the KPMG - Sprocket dataset.")
