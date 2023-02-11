@@ -17,10 +17,10 @@ with row3_1:
     st.markdown("This dataset is about a bicycle retail company and provides valuable insights into the company's operations and performance. Our goal is to perform a general data analysis and present some key findings that can be utilized to make strategic marketing decisions to attract new potential customers. We hope that the insights presented here will give a better understanding of the market and help drive growth for the company. Let's dive into the analysis and explore the potential opportunities that the data presents.")
     
 
-new_cust = pd.read_csv(r"C:\Users\Ashish Mhatre\Desktop\ADM\Assignment 1\cust_clean.csv")
-cust_add = pd.read_csv(r"C:\Users\Ashish Mhatre\Desktop\ADM\Assignment 1\custadd_clean.csv")
-cust_demo = pd.read_csv(r"C:\Users\Ashish Mhatre\Desktop\ADM\Assignment 1\custdemo_clean.csv")
-trans = pd.read_csv(r"C:\Users\Ashish Mhatre\Desktop\ADM\Assignment 1\trans_clean.csv")
+new_cust = pd.read_csv("cust_clean.csv")
+cust_add = pd.read_csv("custadd_clean.csv")
+cust_demo = pd.read_csv("custdemo_clean.csv")
+trans = pd.read_csv("trans_clean.csv")
 
 trans = trans[trans['order_status'] == 'Approved'].copy()
 trans['profit'] = trans['list_price'] - trans['standard_cost']
