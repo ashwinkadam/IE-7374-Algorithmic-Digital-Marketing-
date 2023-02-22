@@ -4,4 +4,3 @@ numpy
 datetime
 seaborn
 matplotlib
-os
