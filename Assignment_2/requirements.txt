@@ -4,5 +4,4 @@ numpy
 datetime
 seaborn
 matplotlib
-warnings
 os
