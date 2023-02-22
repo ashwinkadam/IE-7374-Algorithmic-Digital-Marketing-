@@ -10,7 +10,7 @@ import os
 warnings.filterwarnings('ignore')
 import streamlit as st
 from snowflake.snowpark.session import Session
-from snowflake.snowpark.functions import avg, sum, col,lit
+# from snowflake.snowpark.functions import avg, sum, col,lit
 from snowflake.connector import connect
 
 st.set_page_config(page_title='Sprocket Bikes', page_icon=':bike:')
