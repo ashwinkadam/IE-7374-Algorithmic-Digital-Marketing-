@@ -5,3 +5,4 @@ datetime
 seaborn
 matplotlib
 snowflake
+snowflake-connector-python
