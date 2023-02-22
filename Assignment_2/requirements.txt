@@ -3,6 +3,6 @@ pandas
 numpy
 datetime
 seaborn
-matplotlib.pyplot
+matplotlib
 warnings
 os
