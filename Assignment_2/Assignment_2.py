@@ -68,8 +68,8 @@ with st.expander("About"):
     st.write("Cohort analysis is a powerful tool for businesses to understand the behavior of specific groups of customers over time.")
     st.write("We have three types of cohort analysis, Customer Retention, Avg List Price, and Avg Standard Cost as shown below.")
     st.write("We have used Data from [here](https://www.kaggle.com/datasets/archit9406/customer-transaction-dataset) to perform the analysis.")
+    st.write("Code can found [here](https://github.com/ashwinkadam/IE-7374-Algorithmic-Digital-Marketing-/tree/main/Assignment_2)")
     st.write("Inspired by [1](https://www.analyticsvidhya.com/blog/2021/06/cohort-analysis-using-python-for-beginners-a-hands-on-tutorial/) and [2](https://github.com/streamlit/example-app-cohort-analysis)")
-
 #######################################Customer Retention#########################################
 
 #TransactionMonth column will keep transaction year , month and force day to 1.
