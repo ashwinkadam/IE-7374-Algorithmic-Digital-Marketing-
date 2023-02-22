@@ -2,16 +2,13 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 import seaborn as sns
-# import missingno as msno
-# from textwrap import wrap
 import matplotlib.pyplot as plt
 import warnings
 import os
 warnings.filterwarnings('ignore')
 import streamlit as st
-# from snowflake.snowpark.session import Session
-# from snowflake.snowpark.functions import avg, sum, col,lit
 from snowflake.connector import connect
+
 
 st.set_page_config(page_title='Sprocket Bikes', page_icon=':bike:')
 
@@ -25,23 +22,6 @@ database = os.environ.get('database')
 schema = os.environ.get('schema')
 
 
-
-#connection to snowflake
-# Define the connection parameters
-# connection_parameters = {
-#     "account": "ca60211.us-east4.gcp",
-#     "user": "PYASHISHMHATRE",
-#     "password": "!Ashish123",
-#     "role": "SYSADMIN",
-#     "warehouse": "COMPUTE_WH",
-#     "database": "SPROCKET",
-#     "schema": "PUBLIC"
-# }
-
-
-
-
-
 connection_parameters = {
     "account": os.environ.get("SNOWFLAKE_ACCOUNT"),
     "user": os.environ.get("SNOWFLAKE_USER"),
@@ -51,15 +31,6 @@ connection_parameters = {
     "database": os.environ.get("SNOWFLAKE_DATABASE"),
     "schema": os.environ.get("SNOWFLAKE_SCHEMA")
 }
-
-
-# SNOWFLAKE_ACCOUNT = "ca60211.us-east4.gcp"
-# SNOWFLAKE_USER = "PYASHISHMHATRE"
-# SNOWFLAKE_PASSWORD = "!Ashish123"
-# SNOWFLAKE_ROLE = "SYSADMIN"
-# SNOWFLAKE_WAREHOUSE = "COMPUTE_WH"
-# SNOWFLAKE_DATABASE = "SPROCKET"
-# SNOWFLAKE_SCHEMA = "PUBLIC"
 
 
 
