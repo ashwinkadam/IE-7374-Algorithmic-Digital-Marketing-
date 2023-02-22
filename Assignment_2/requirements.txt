@@ -3,7 +3,6 @@ pandas
 numpy
 datetime
 seaborn
-textwrap
 matplotlib.pyplot
 warnings
 os
