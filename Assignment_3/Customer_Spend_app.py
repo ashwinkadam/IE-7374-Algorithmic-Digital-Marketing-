@@ -10,34 +10,34 @@ import snowflake.snowpark as sp
 import json 
 import os
 
-account = os.environ.get('account')
-user = os.environ.get('user')
-password = os.environ.get('password')
-role = os.environ.get('role')
-warehouse = os.environ.get('warehouse')
-database = os.environ.get('database')
-schema = os.environ.get('schema')
+# account = os.environ.get('account')
+# user = os.environ.get('user')
+# password = os.environ.get('password')
+# role = os.environ.get('role')
+# warehouse = os.environ.get('warehouse')
+# database = os.environ.get('database')
+# schema = os.environ.get('schema')
 
-
-connection_parameters = {
-    "account": os.environ.get("SNOWFLAKE_ACCOUNT"),
-    "user": os.environ.get("SNOWFLAKE_USER"),
-    "password": os.environ.get("SNOWFLAKE_PASSWORD"),
-    "role": os.environ.get("SNOWFLAKE_ROLE"),
-    "warehouse": os.environ.get("SNOWFLAKE_WAREHOUSE"),
-    "database": os.environ.get("SNOWFLAKE_DATABASE"),
-    "schema": os.environ.get("SNOWFLAKE_SCHEMA")
-}
 
 # connection_parameters = {
-   
-#   "account": "tm26567.us-east4.gcp",
-#   "user": "ASHWINKADAM",
-#   "password": "Ashwin@8767",
-#   "warehouse": "COMPUTE_WH",
-#   "database": "SNOWFLAKE_SAMPLE_DATA",
-#   "schema": "Public"
+#     "account": os.environ.get("SNOWFLAKE_ACCOUNT"),
+#     "user": os.environ.get("SNOWFLAKE_USER"),
+#     "password": os.environ.get("SNOWFLAKE_PASSWORD"),
+#     "role": os.environ.get("SNOWFLAKE_ROLE"),
+#     "warehouse": os.environ.get("SNOWFLAKE_WAREHOUSE"),
+#     "database": os.environ.get("SNOWFLAKE_DATABASE"),
+#     "schema": os.environ.get("SNOWFLAKE_SCHEMA")
 # }
+
+connection_parameters = {
+   
+  "account": "tm26567.us-east4.gcp",
+  "user": "ASHWINKADAM",
+  "password": "Ashwin@8767",
+  "warehouse": "COMPUTE_WH",
+  "database": "SNOWFLAKE_SAMPLE_DATA",
+  "schema": "Public"
+}
 
 
 def create_session():
