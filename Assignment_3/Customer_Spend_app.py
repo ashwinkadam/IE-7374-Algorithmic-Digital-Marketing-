@@ -7,8 +7,9 @@ from snowflake.snowpark import version as v
 from snowflake.snowpark.functions import call_udf
 import streamlit as st
 import snowflake.snowpark as sp
-import json 
+import warnings
 import os
+warnings.filterwarnings('ignore')
 
 account = os.environ.get('account')
 user = os.environ.get('user')
