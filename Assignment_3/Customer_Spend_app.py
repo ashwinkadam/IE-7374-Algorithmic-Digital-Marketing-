@@ -11,13 +11,13 @@ import warnings
 import os
 warnings.filterwarnings('ignore')
 
-account = os.environ.get('account')
-user = os.environ.get('user')
-password = os.environ.get('password')
-role = os.environ.get('role')
-warehouse = os.environ.get('warehouse')
-database = os.environ.get('database')
-schema = os.environ.get('schema')
+# account = os.environ.get('account')
+# user = os.environ.get('user')
+# password = os.environ.get('password')
+# role = os.environ.get('role')
+# warehouse = os.environ.get('warehouse')
+# database = os.environ.get('database')
+# schema = os.environ.get('schema')
 
 
 connection_parameters = {
