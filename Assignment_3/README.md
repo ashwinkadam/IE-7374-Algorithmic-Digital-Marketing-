@@ -21,9 +21,9 @@ Finally, we have deployed our ML model in a Streamlit app where the user can upl
 1. Clone this repository to your local machine.
 2. Create a Snowflake account and set up the required credentials.
 3. To create Database, feature table and to tarined model run locally script 'Customer_Spending_Prediction.ipynb'
-4. Run the Streamlit app using the following command: streamlit run Customer_Spend_app.py
-5.Upload a CSV file with the required features to the Streamlit app.
-6.Get the predicted values for customer spending.
+4. Run the Streamlit app using the following command: streamlit run 'Customer_Spend_app.py'
+5. Upload a CSV file with the required features to the Streamlit app.
+6. Get the predicted values for customer spending.
 
 ## Conclusion
 This project demonstrated how to use Snowflake Dataplatform to perform customer spending prediction using an ML model. By leveraging the platform's capabilities like UDF, Sproc, and Stage area, we were able to store and deploy our ML model effectively. The Streamlit app provided a user-friendly interface to upload new data and get predicted values.
