@@ -12,12 +12,15 @@ import os
 warnings.filterwarnings('ignore')
 
 
+connection_parameters = {
+  "account": "tm26567.us-east4.gcp",
+  "user": "ASHWINKADAM",
+  "password": "Ashwin@8767",
+  "warehouse": "COMPUTE_WH",
+  "database": "SNOWFLAKE_SAMPLE_DATA",
+  "schema": "Public"
+}
 
-import os
-
-file_path = os.path.join(os.path.dirname(__file__), "creds.json")
-with open(file_path) as f:
-    connection_parameters = json.load(f)
 
 def create_session():
     if "snowpark_session" not in st.session_state:
@@ -26,15 +29,6 @@ def create_session():
     else:
         session = st.session_state['snowpark_session']
     return session
-
-
-# def create_session():
-#     if "snowpark_session" not in st.session_state:
-#         session = Session.builder.configs(json.load(open("creds.json"))).create()
-#         st.session_state['snowpark_session'] = session
-#     else:
-#         session = st.session_state['snowpark_session']
-#     return session
 
 
 
