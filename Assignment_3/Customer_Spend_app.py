@@ -33,7 +33,7 @@ def create_session():
 
 
 st.text('')
-st.title('Customer Spending Prediction using Snowflake Dataplatform')
+st.title('Customer Spending Prediction using Snowflake Dataplatform', font_size=30)
 csv_file = st.file_uploader(label='Upload CSV file with user data', type = 'csv')
 
 def predict(inputs):
