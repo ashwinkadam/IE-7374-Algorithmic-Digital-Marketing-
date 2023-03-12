@@ -20,15 +20,15 @@ warnings.filterwarnings('ignore')
 # schema = os.environ.get('schema')
 
 
-connection_parameters = {
-    "account": os.environ.get("SNOWFLAKE_ACCOUNT"),
-    "user": os.environ.get("SNOWFLAKE_USER"),
-    "password": os.environ.get("SNOWFLAKE_PASSWORD"),
-    "role": os.environ.get("SNOWFLAKE_ROLE"),
-    "warehouse": os.environ.get("SNOWFLAKE_WAREHOUSE"),
-    "database": os.environ.get("SNOWFLAKE_DATABASE"),
-    "schema": os.environ.get("SNOWFLAKE_SCHEMA")
-}
+# connection_parameters = {
+#     "account": os.environ.get("SNOWFLAKE_ACCOUNT"),
+#     "user": os.environ.get("SNOWFLAKE_USER"),
+#     "password": os.environ.get("SNOWFLAKE_PASSWORD"),
+#     "role": os.environ.get("SNOWFLAKE_ROLE"),
+#     "warehouse": os.environ.get("SNOWFLAKE_WAREHOUSE"),
+#     "database": os.environ.get("SNOWFLAKE_DATABASE"),
+#     "schema": os.environ.get("SNOWFLAKE_SCHEMA")
+# }
 
 # connection_parameters = {
    
@@ -41,6 +41,27 @@ connection_parameters = {
 # }
 
 
+# def create_session():
+#     if "snowpark_session" not in st.session_state:
+#         session = Session.builder.configs(connection_parameters).create()
+#         st.session_state['snowpark_session'] = session
+#     else:
+#         session = st.session_state['snowpark_session']
+#     return session
+
+
+import streamlit as st
+
+connection_parameters = {
+   
+  "account": "tm26567.us-east4.gcp",
+  "user": "ASHWINKADAM",
+  "password": st.secrets["snowflake_password"],
+  "warehouse": "COMPUTE_WH",
+  "database": "SNOWFLAKE_SAMPLE_DATA",
+  "schema": "Public"
+}
+
 def create_session():
     if "snowpark_session" not in st.session_state:
         session = Session.builder.configs(connection_parameters).create()
@@ -48,8 +69,6 @@ def create_session():
     else:
         session = st.session_state['snowpark_session']
     return session
-
-
 
 
 # def create_session():
