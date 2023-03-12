@@ -1,4 +1,3 @@
-!pip install pyarrow==10.0.1
 import json
 import altair as alt
 import pandas as pd
