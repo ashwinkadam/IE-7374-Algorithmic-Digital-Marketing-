@@ -11,14 +11,24 @@ import warnings
 import os
 warnings.filterwarnings('ignore')
 
+# def create_session():
+#     if "snowpark_session" not in st.session_state:
+#         session = Session.builder.configs(json.load(open("creds.json"))).create()
+#         st.session_state['snowpark_session'] = session
+#     else:
+#         session = st.session_state['snowpark_session']
+#     return session
+
+
+connection_parameters = st.secrets["Snowflake"]
+
 def create_session():
     if "snowpark_session" not in st.session_state:
-        session = Session.builder.configs(json.load(open("creds.json"))).create()
+        session = Session.builder.configs(connection_parameters).create()
         st.session_state['snowpark_session'] = session
     else:
         session = st.session_state['snowpark_session']
     return session
-
 
 
 st.text('')
