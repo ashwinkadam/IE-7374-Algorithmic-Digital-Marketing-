@@ -17,8 +17,10 @@ connection_parameters = {
   "user": "ashwinkadam",
   "password": "Ashwin@8767",
   "warehouse": "COMPUTE_WH",
-  "database": "SNOWFLAKE_SAMPLE_DATA",
-  "schema": "Public"
+  "database": "TPCDS_XGBOOST"
+#   "SNOWFLAKE_SAMPLE_DATA",
+  "schema": "Demo"
+#   "Public"
 }
 
 
