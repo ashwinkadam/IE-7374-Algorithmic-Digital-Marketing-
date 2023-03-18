@@ -33,3 +33,5 @@ This project demonstrated how to use Snowflake Dataplatform to perform customer 
 
 Codelab Link : https://docs.google.com/document/d/e/2PACX-1vQVDmyOos9SDuZjedVESNmPEoj8VSN3QCRlkZ76QySHVto0BuXoeDE4ThypLrRUaQjQkTpbWYSDcUSd/pub
 
+
+App Link : https://ashwinkadam-ie-7374-algor-assignment-3customer-spend-app-a5cegx.streamlit.app/
