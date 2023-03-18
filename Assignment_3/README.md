@@ -27,3 +27,9 @@ Finally, we have deployed our ML model in a Streamlit app where the user can upl
 
 ## Conclusion
 This project demonstrated how to use Snowflake Dataplatform to perform customer spending prediction using an ML model. By leveraging the platform's capabilities like UDF, Sproc, and Stage area, we were able to store and deploy our ML model effectively. The Streamlit app provided a user-friendly interface to upload new data and get predicted values.
+
+
+
+
+Codelab Link : https://docs.google.com/document/d/e/2PACX-1vQVDmyOos9SDuZjedVESNmPEoj8VSN3QCRlkZ76QySHVto0BuXoeDE4ThypLrRUaQjQkTpbWYSDcUSd/pub
+
