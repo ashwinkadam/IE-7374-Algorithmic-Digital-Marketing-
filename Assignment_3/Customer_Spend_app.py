@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 connection_parameters = {
   "account": "oj67901.us-east4.gcp",
   "user": "ashwinkadam",
-  "password": "Ashwin@8767",
+  "password": "",
   "warehouse": "COMPUTE_WH",
   "database": "TPCDS_XGBOOST",
 #   "SNOWFLAKE_SAMPLE_DATA",
